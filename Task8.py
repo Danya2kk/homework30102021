@@ -1,5 +1,7 @@
-name = input("Введите три имени тех которых вы хотите пригласить: ")
-inviteList = [name]
+inviteList = []
+
+for i in range(3):
+    inviteList.append(input("Введите имя человека которого хотите пригласить: "))
 
 while True:
     option = input("Хотите кого-то пригласить еще yes/no: ")
@@ -8,4 +10,6 @@ while True:
         inviteList.append(newName)
     elif option == "no":
         break
-print(inviteList)
+
+for name in inviteList:
+    print(name)
