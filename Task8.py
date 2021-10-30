@@ -5,8 +5,7 @@ while True:
     option = input("Хотите кого-то пригласить еще yes/no: ")
     if option == "yes":
         newName = input("Введите имя приглашенного: ")
-        inviteList = [name + ' ' + newName]
+        inviteList.append(newName)
     elif option == "no":
         break
-for n in inviteList:
-    print(n)
+print(inviteList)
